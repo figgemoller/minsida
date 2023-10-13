@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+ <!-- lang anger språk och kan även ange land-->
+
+<html lang="sv">
+  
+    <head>
+        <!--css-filer som anväds-->
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="skroll.css" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+       <!--Title anger rubriken i fliken-->
+        <Title>Romelebygdens telegrambyrå</Title>
+    </head>
+
+    <body>
+        <!--Rubrik och bakgrundsbild, bakgrundsbild ligger i css-filen, (styles.css)-->  
+        <header>
+            <!--Rubrik-->
+            <br>
+            <H1 style=text-align:center;>Romelebygdens</H1>
+            <H1 style=text-align:center;>telegrambyrå</H1>
+        </header>
+            
+            
+        <!-- navbar + knappar-->
+        <nav id="navbar">
+        
+            <button class="button button1" title="Hem">Hem</button>
+            <button class="button button1">Kontakt</button>
+            <button class="button button1">Ansvarig utgivare</button>
+            <button class="button button1">Sök i arkivet</button>
+            <button class="button button1">Ekonomi</button>
+
+        </nav>
+
+        <!--section, Scrolling text (latest news)-->
+        <section id="delar">
+            <div id="ruta">Senaste nytt</div>
+            <div class="scroll-left">
+                <!--Rubrikerna som "rullar"-->
+                <p> Golfbanan får bana för discsgolf &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Senaste husförsäljningen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Byggstoppet upphävt
+                </p>
+            </div>
+                
+        </section> 
+        
+
+        <!--main, maincontainer, container med row, innehållande newscontainer2 (huvudrubrik + två mindre)
+             samt den högra reklamcontainern med row. 
+             (när den förminskas flyttas reklamblocket under nyheterna i row istället för koolumn)
+             -->
+        <main id="maincontainer">  
+                
+            <!--section, section1container innehåller alla nyhetsartiklar (ett block med huvudartikel och ett block med mindre artiklar) -->
+            <section id="section1container">
+                
+                
+                <!--article, Första nyheten/huvudartikel, lika bred som två mindre-->
+                
+                <article id="nyhet1">
+                    <!--Rubrik-->
+                    <h2>Golfbanan får bana för discgolf</h2>
+                    <div class="vanster">
+                        <!--Ingress-->
+                        <b>Under våren har vi arbetat för fullt med att få Romele Disc Golf Arena klar för spel nu i sommar. Vi har kommit en bra bit på väg även om en hel del arbete återstår.</b>
+                        <!--brödtext-->
+                        <div>
+                            Men stora delar av anläggningen är nu så pass klara att vi smygstartar med en öppningsdag söndag 18 juni! Då kan du spela guldtee på Äventyrsbanan (Tävlingsbanan) och delar av Skogsbanan helt gratis. Därefter håller vi öppet med reducerad greenfee tills vidare.
+                            Varmt välkommen på öppningsdag av Romele Disc Golf Arena söndag 18 juni!
+                        </div>
+                    </div>    
+                    <img src="resources/discgolf.jpg" alt="discgolf" style="width: 20rem;">
+                    
+                </article>
+                
+                <!--section, newscontainer2 innehåller två mindre artiklar i row -->
+                <section id="newscontainer2">
+                
+                    <!--mindre artikel 1-->
+                    <article id="nyhet2">
+                        <!--Rubrik-->
+                        <h3>Senaste husförsäljningen</h3>
+                        <div class="vanster">
+                            <!--Ingress-->
+                            <b>Efter 53 år går en era i graven när byns första "utomsocknes" nu flyttar.</b>
+                            <!--brödtext-->
+                            <div>1970 köptes huset av familjen från Stockholm. Huset har sedan dess genomgått en stor förvandling. Nu börjar ett nytt kapitel med nya ägare.</div>
+                        </div>
+
+                    </article>
+
+                    <!--mindre artikel 2-->
+                    <article id="nyhet3">
+                        <!--Rubrik-->
+                        <h3>Förskolan Glada Ankan</h3>
+                        <div class="vanster">
+                            <!--Ingress-->
+                            <b>Förskolan Glada Ankan drivs som ett föräldrakooperativ. </b>
+                            <!--brödtext-->
+                            <div>Skolan ligger vackert beläget, högt uppe på Romeleåsens kullar omgiven av underbar natur, cirka 5 km söder om Veberöd. Förskolan omges av hagar med djur och oändlig lövskog som lockar till nyfikenhet, upptäckarglädje, lek och motoriska utmaningar. Naturen är Glada Ankans närmsta granne. Fina lövskogar i kuperad terräng och hagar med djur finns alldeles intill husknuten. Förskolans pedagogik bygger på Lpfö 18 med inriktning på uteverksamhet. Utflykter till den närliggande skogen sker ofta. </div>
+                        </div>
+
+                    </article>
+
+                </section>
+
+            </section>
+
+            <!--section, reklamcontainer innehåller reklamboxarna -->
+            <section id="reklamcontainer">
+                       
+                <!--reklam 1-->
+                <aside class="reklam1">
+                    <img height="96rem" width="96rem" src="resources/tuggummi.jpg" alt="tugga nisses tuggummi">   
+                </aside>
+
+                <!--reklam 2-->
+                <aside class="reklam2">
+                    <div>Gevalia Amailia</div>
+                    <img height="50rem" width="rem;" src="resources/gevalia.png" alt="Gevalia Amalia">
+                </aside>
+            
+                <!--reklam 3-->
+                <aside class="reklam3">
+                    <img height="96rem" width="96rem" src="resources/vicks.jpg" alt="Vicks blå">
+                </aside>
+
+                <!--reklam 4-->
+                <aside class="reklam3">
+                   <div>Vill du också annonsera här?</div>
+                   
+                </aside>
+
+            </section>
+                
+        </main>
+
+        <!--sidfot-->
+        <footer id="footer">
+
+            <!--text, bild etc till vänster i footer-->
+            <Div>
+                <div><a href="http://www.facebook.com">Facebook</a></div>
+                <div><a href="mailto:email@example.com">Send Email</a></div>  
+            </Div>                
+            
+            <!--text/bild etc center i footer-->
+            <div>
+                <Address>Gata 1 00000 Stad</Address>
+                <a href="Tel:0000000000">Ring oss: 0000 00 00 00</a>
+            </div>
+            </Div>
+
+            <!--text/bild mm till höger i footer-->
+            <Div>
+                <iframe style="height:80px; min-width:200px; width:100%; max-width:300px;" title="Väderwidget" src="https://xn--vder24-bua.se/index.php/vader-widget/?widgettype=white&widgetcity=alcudia" name="weatheriFrame" frameborder="0" scrolling="0"></iframe>
+            </Div>
+            
+        </footer>
+    </body>
+</html>
